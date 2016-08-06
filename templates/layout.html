@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>API Application | Tmaiko</title>
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='bootstrap.min.css') }}">
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+	</head>
+	<body>
+		<div class="container">
+			<div class="text-center">
+				<h1>Plotkov Generator</h1>
+				<h4>Markov Chains: A Python Implementation</h4>
+			</div>
+		</div>
+
+		<div class="container">
+			<h2><em>// About the Plotkov Generator</em></h2>
+			<p>This is a simple implementation of Markov Chains written in Python using the Flask micro-framework. From a high level, the program scrapes <a href="http://www.listchallenges.com/top-1000-greatest-movies-of-all-time-by-imdb">a list of the top 1000 movies</a> (according to IMDB) and creates various Markov Chains of different orders used to generate new, never-before-seen, original plot lines</p>
+			<p>The Markov Chains were processed before hand and serialized using Pickle so the user doesn't have a long wait time while loading the application for the first time. While imperfect and leaving a lot to be desired from a grammar standpoint, the plot generator produces some interesting, hillarious, and sometimes haunting plot lines. Click the 'Generate Plot' button below and see what you come up with!</p>
+		</div>
+
+		<div class="container">
+			{% block content %}
+			{% endblock %}
+		</div>
+	</body>
+</html>

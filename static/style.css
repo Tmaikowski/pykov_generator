@@ -1,0 +1,19 @@
+body {
+	background: #c3b9db;
+	background-image: url("zenbg-1.png"), url("zenbg-2.png");
+	background-repeat: repeat-x, repeat;
+}
+
+.container {
+	margin-top: 2%;
+	background: white;
+	opacity: 0.8;
+	-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+	box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+	border-radius: 10px;
+}
+
+.btn-default {
+	margin-bottom: 10px;
+}

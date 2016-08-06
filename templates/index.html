@@ -1,0 +1,21 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+
+{% for key, val in generated_orderplots.items() %}
+	<div class="row">
+		<div class="col-md-12">
+			<h3><em>// Generated Plot: Order {{ key-1 }}</em></h3>
+		</div>
+		<div class="col-md-12">
+			<p>{{ val }}</p>
+		</div>
+	</div>
+	<hr>
+{% endfor %}
+<br>
+<form action="{{ url_for('index') }}">
+	<input class="btn btn-default" type="submit" value="Generate Plot">
+</form>
+
+{% endblock %}
